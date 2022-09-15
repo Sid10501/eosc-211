@@ -150,7 +150,7 @@ $$
 
 where $r$ is the radius of the circle and $\pi = 3.14...$. We can code this equation in python by assigning the variable named `circumference` to a calculated value like so:
 
-```{raw-cell}
+```{code-cell} ipython3
 # code snippet to calculate the circumference of a spherical planet given some radius: 
 radius_of_planet = 6371  # [km]
 pi = 3.14 
@@ -165,13 +165,11 @@ print(circumference)
 print(f'The planet has {circumference = :.2f} km')
 ```
 
-```{raw-cell}
 This example makes three assignments. The first assigns the integer value `6371` to the variable named `radius_of_planet`. The second assigns the floating-point value of `3.14` to the variable `pi`,  and the third assigns the product of the multiplication to the variable `circumference`.
 
 
 ### Lists
 Lists are a built-in compound *iterable* data type which are composed of an ordered collection of values. Values in a list are referred to as *items* or *elements*.  Lists can be written as a list of comma-separated values enclosed in square brackets or using the `list()` constructor function. Lists are ordered and mutable, meaning that they maintain the order of their elements, and that they are able to be changed after they are created. Lists can contain items of different data types (meaning any combination of numerical or string data types).
-```
 
 ```{code-cell} ipython3
 primes = [0, 1, 3, 5, 7, 11]  # a list of integers
@@ -279,9 +277,5 @@ Tuples are immutable, meaning they cannot be changed after initialization:
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment
-
-```
-
-```{code-cell} ipython3
 
 ```
